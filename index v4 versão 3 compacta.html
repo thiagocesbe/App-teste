@@ -11,62 +11,153 @@
 <title>Controle de Contas PRO</title>
 
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;margin:0;background:#0f0f10;color:#fff;font-size:80%}
-header{padding:8px;font-size:15px;font-weight:bold}
-.container{padding:8px}
-.card{background:#1a1a1c;border-radius:12px;padding:8px;margin-bottom:8px}
-.section{margin-top:4px;padding:4px;background:#121214;border-radius:8px}
-.section-header{display:flex;justify-content:space-between;align-items:center}
-.add-btn{cursor:pointer}
+body{
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+margin:0;
+background:#0b0b0c;
+color:#eaeaea;
+font-size:80%;
+-webkit-font-smoothing:antialiased;
+}
+
+header{
+padding:10px;
+font-size:16px;
+font-weight:600;
+letter-spacing:0.3px;
+color:#ffffff;
+}
+
+.container{padding:10px}
+
+.card{
+background:#18181a;
+border-radius:14px;
+padding:10px;
+margin-bottom:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.25);
+}
+
+.section{
+margin-top:5px;
+padding:6px;
+background:#111113;
+border-radius:10px;
+}
+
+.section-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:12px;
+letter-spacing:0.5px;
+color:#cfcfcf;
+}
+
+.add-btn{
+cursor:pointer;
+font-size:16px;
+opacity:0.7;
+}
 
 .item{
 display:flex;
 justify-content:space-between;
-margin:1px 0;
 align-items:center;
-padding:3px 5px;
-border-radius:6px
+margin:1px 0;
+padding:5px 6px;
+border-radius:8px;
+transition:0.15s;
 }
 
-.item:active{background:#2a2a2c}
-.total{margin-top:2px;font-weight:bold}
+.item:active{
+background:#2a2a2e;
+transform:scale(0.98);
+}
+
+.item span:first-child{
+font-size:12px;
+font-weight:500;
+}
+
+.item span:last-child{
+font-size:12px;
+font-weight:600;
+}
+
+.total{
+margin-top:4px;
+font-size:11px;
+font-weight:600;
+color:#bfbfbf;
+}
 
 input,button,textarea{
 width:100%;
 margin:2px 0;
-padding:4px;
-border-radius:6px;
+padding:5px;
+border-radius:8px;
 border:none;
-font-size:12px
+font-size:12px;
+background:#1f1f22;
+color:#fff;
 }
 
-button{background:#fff;color:#000;font-weight:bold}
-.small{font-size:9px;opacity:.7}
+input::placeholder{
+color:#777;
+}
+
+button{
+background:#ffffff;
+color:#000;
+font-weight:600;
+border-radius:8px;
+}
+
+.small{
+font-size:9px;
+opacity:.6;
+margin-top:1px;
+}
 
 .delete-text{
-color:#ff4d4d;
+color:#ff5c5c;
 font-size:9px;
-margin-top:2px;
-cursor:pointer
+margin-top:3px;
+cursor:pointer;
 }
 
-.account-header{cursor:pointer}
-.arrow{margin-left:4px;font-size:10px;cursor:pointer}
+.account-header{
+cursor:pointer;
+font-size:13px;
+font-weight:600;
+letter-spacing:0.3px;
+}
+
+.arrow{
+margin-left:5px;
+font-size:10px;
+opacity:0.7;
+cursor:pointer;
+}
 
 input[type="color"]{
-width:24px;
-height:24px;
+width:26px;
+height:26px;
 border-radius:50%;
-border:none
+border:none;
+background:none;
 }
 
 textarea{
-min-height:60px;
+min-height:70px;
 resize:none;
 background:transparent;
 color:#fff;
 border:none;
-outline:none
+outline:none;
+font-size:12px;
+line-height:1.4;
 }
 </style>
 </head>

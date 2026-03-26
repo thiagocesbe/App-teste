@@ -103,9 +103,7 @@ background:#1f1f22;
 color:#fff;
 }
 
-input::placeholder{
-color:#777;
-}
+input::placeholder{color:#777;}
 
 button{
 background:#ffffff;
@@ -114,11 +112,7 @@ font-weight:600;
 border-radius:8px;
 }
 
-.small{
-font-size:9px;
-opacity:.6;
-margin-top:1px;
-}
+.small{font-size:9px;opacity:.6;margin-top:1px;}
 
 .delete-text{
 color:#ff5c5c;
@@ -163,7 +157,9 @@ line-height:1.4;
 </head>
 
 <body>
+
 <header contenteditable="true" id="title"></header>
+
 <div class="container">
 
 <div class="card">
@@ -317,7 +313,7 @@ save();render();
 }
 }
 
-// DRAG original mantido
+// DRAG
 function touchStart(ai, si, ii) {
 dragIndex = { ai, si, ii };
 isDragging = false;
@@ -433,5 +429,6 @@ document.getElementById('grandTotal').innerHTML=`Total Geral: ${brl(grand)}`;
 
 render();
 </script>
+
 </body>
 </html>
